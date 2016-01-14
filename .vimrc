@@ -57,6 +57,8 @@ cno kj <C-[>
 
 " Fast saving
 nmap <leader>w :w!<cr>
+" Fast quitting 
+nmap <leader>q :q!<cr>
 
 " Remove arrow key navigation. Earth go hard
 inoremap <Left>  <NOP>
