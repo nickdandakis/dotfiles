@@ -39,8 +39,8 @@ syntax on
 
 colorscheme molokai
 
-" Line numbers
-set number
+" Relative line numbers
+set relativenumber
 
 " Autocomplete menu
 set wildmenu
@@ -71,6 +71,9 @@ set ruler
 
 " Highlight search results
 set hlsearch
+
+" Search for visually selected text
+vnoremap // y/<C-R>"<CR>
 
 " Show matching brackets when text indicator is over them
 set showmatch
