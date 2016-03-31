@@ -92,3 +92,4 @@ alias z='fasd_cd -d'     # cd, same functionality as j in autojump
 alias zz='fasd_cd -d -i' # cd with interactive selection
 alias v='f -e vim' # quick opening files with vim
 
+alias weather='curl -4 http://wttr.in/New_York'
