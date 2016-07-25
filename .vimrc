@@ -16,7 +16,7 @@ Plugin 'bling/vim-airline'
 Plugin 'kien/ctrlp.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tomasr/molokai'
-Plugin 'rking/ag.vim'
+Plugin 'rking/ag.vim' " brew install the_silver_searcher to install Ag
 Plugin 'tomtom/tcomment_vim'
 
 " All of your Plugins must be added before the following line
@@ -144,3 +144,6 @@ let g:ctrlp_working_path_mode = 'ra'
 
 " tComment settings
 map <leader>/ gc
+
+" .json syntax highlighting
+autocmd BufNewFile,BufRead *.json set ft=javascript
