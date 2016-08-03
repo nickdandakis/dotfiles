@@ -18,6 +18,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'tomasr/molokai'
 Plugin 'rking/ag.vim' " brew install the_silver_searcher to install Ag
 Plugin 'tomtom/tcomment_vim'
+Plugin 'mhinz/vim-startify'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
