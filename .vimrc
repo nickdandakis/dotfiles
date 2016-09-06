@@ -19,6 +19,9 @@ Plugin 'tomasr/molokai'
 Plugin 'rking/ag.vim' " brew install the_silver_searcher to install Ag
 Plugin 'tomtom/tcomment_vim'
 Plugin 'mhinz/vim-startify'
+Plugin 'posva/vim-vue'
+Plugin 'nelsyeung/twig.vim'
+Bundle 'wakatime/vim-wakatime'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
