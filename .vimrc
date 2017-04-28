@@ -153,3 +153,6 @@ map <leader>/ gc
 
 " .json syntax highlighting
 autocmd BufNewFile,BufRead *.json set ft=javascript
+
+" .ejs syntax highlighting
+au BufNewFile,BufRead *.ejs set filetype=html
