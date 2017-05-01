@@ -23,6 +23,8 @@ Plugin 'posva/vim-vue'
 Plugin 'nelsyeung/twig.vim'
 Bundle 'wakatime/vim-wakatime'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -156,3 +158,6 @@ autocmd BufNewFile,BufRead *.json set ft=javascript
 
 " .ejs syntax highlighting
 au BufNewFile,BufRead *.ejs set filetype=html
+
+" Allow JSX syntax highlighting in .js files
+let g:jsx_ext_required = 0 
