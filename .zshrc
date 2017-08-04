@@ -50,7 +50,8 @@ plugins=(git)
 # User configuration
 
 export GOPATH=$HOME/go
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$GOPATH/bin"
+export PYTHONPATH=$HOME/Library/Python/2.7
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$GOPATH/bin:$PYTHONPATH/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
