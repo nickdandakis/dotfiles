@@ -27,6 +27,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'tikhomirov/vim-glsl'
 Plugin 'alampros/vim-styled-jsx'
+Plugin 'tpope/vim-surround'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
