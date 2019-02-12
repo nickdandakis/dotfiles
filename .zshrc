@@ -96,3 +96,7 @@ alias v='f -e vim' # quick opening files with vim
 alias j='fasd_cd -d'
 
 alias weather='curl -4 http://wttr.in/New_York'
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
