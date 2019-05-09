@@ -31,3 +31,5 @@ Install Magnet
 Install Docker
 
 Install ZEIT Now Desktop
+
+Install Dropbox
