@@ -52,6 +52,7 @@ colorscheme molokai
 
 " Relative line numbers
 set relativenumber
+set nu
 
 " Autocomplete menu
 set wildmenu
@@ -165,3 +166,6 @@ au BufNewFile,BufRead *.ejs set filetype=html
 
 " Allow JSX syntax highlighting in .js files
 let g:jsx_ext_required = 0 
+
+" Ignore files in NERDTree
+let NERDTreeIgnore = ['\.pyc$', '^__pycache__$']
