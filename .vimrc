@@ -29,6 +29,7 @@ Plugin 'tikhomirov/vim-glsl'
 Plugin 'alampros/vim-styled-jsx'
 Plugin 'tpope/vim-surround'
 Plugin 'zxqfl/tabnine-vim'
+Plugin 'evanleck/vim-svelte'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
