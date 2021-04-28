@@ -51,7 +51,8 @@ plugins=(git)
 
 export GOPATH=$HOME/go
 export PYTHONPATH=$HOME/Library/Python/2.7
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$GOPATH/bin:$PYTHONPATH/bin"
+export ANDROID_SDK=$HOME/Library/Android/sdk
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$GOPATH/bin:$PYTHONPATH/bin:$ANDROID_SDK/platform-tools:$ANDROID_SDK/emulator"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh

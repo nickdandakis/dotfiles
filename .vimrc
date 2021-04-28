@@ -23,10 +23,9 @@ Plugin 'posva/vim-vue'
 Plugin 'nelsyeung/twig.vim'
 Bundle 'wakatime/vim-wakatime'
 Plugin 'leafgarland/typescript-vim'
-Plugin 'pangloss/vim-javascript'
-Plugin 'mxw/vim-jsx'
+Plugin 'yuezk/vim-js'
+Plugin 'MaxMEllon/vim-jsx-pretty'
 Plugin 'tikhomirov/vim-glsl'
-Plugin 'alampros/vim-styled-jsx'
 Plugin 'tpope/vim-surround'
 Plugin 'zxqfl/tabnine-vim'
 Plugin 'evanleck/vim-svelte'
@@ -167,6 +166,7 @@ au BufNewFile,BufRead *.ejs set filetype=html
 
 " Allow JSX syntax highlighting in .js files
 let g:jsx_ext_required = 0 
+let g:vim_jsx_pretty_colorful_config = 1
 
 " Ignore files in NERDTree
 let NERDTreeIgnore = ['\.pyc$', '^__pycache__$']
