@@ -10,7 +10,7 @@
 [diff]
   colorMoved = default
 [pull]
-	rebase = true
+  rebase = true
 [user]
-	email = nickdandakis@gmail.com
-	name = Nick Dandakis
+  email = nickdandakis@gmail.com
+  name = Nick Dandakis
