@@ -27,7 +27,7 @@ Plugin 'yuezk/vim-js'
 Plugin 'MaxMEllon/vim-jsx-pretty'
 Plugin 'tikhomirov/vim-glsl'
 Plugin 'tpope/vim-surround'
-Plugin 'zxqfl/tabnine-vim'
+Plugin 'tabnine/YouCompleteMe'
 Plugin 'evanleck/vim-svelte'
 
 " All of your Plugins must be added before the following line

@@ -12,6 +12,8 @@ Install Oh-My-Zsh
 
 Homebrew install fasd
 
+Homebrew install delta (git-delta)
+
 Set Kibble as terminal theme
 
 Symlink .zshrc
