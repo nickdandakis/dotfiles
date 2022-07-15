@@ -14,3 +14,5 @@
 [user]
   email = nickdandakis@gmail.com
   name = Nick Dandakis
+[push]
+	autoSetupRemote = true
