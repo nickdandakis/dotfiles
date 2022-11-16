@@ -35,3 +35,5 @@ Install Docker
 Install ZEIT Now Desktop
 
 Install Dropbox
+
+Install git (bundled git in macos is old usually)
