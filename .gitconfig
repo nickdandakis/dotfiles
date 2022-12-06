@@ -7,6 +7,10 @@
   line-numbers = true
 [merge]
   conflictstyle = diff3
+[commit]
+  gpgsign = true
+[tag]
+  gpgsign = true
 [diff]
   colorMoved = default
 [pull]
