@@ -13,10 +13,10 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'scrooloose/nerdtree'
 Plugin 'bling/vim-airline'
-Plugin 'kien/ctrlp.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tomasr/molokai'
-Plugin 'rking/ag.vim' " brew install the_silver_searcher to install Ag
+Plugin 'junegunn/fzf' " brew install bat, ripgrep, fzf
+Plugin 'junegunn/fzf.vim' " brew install bat, ripgrep, fzf
 Plugin 'tomtom/tcomment_vim'
 Plugin 'mhinz/vim-startify'
 Plugin 'posva/vim-vue'
@@ -27,7 +27,6 @@ Plugin 'yuezk/vim-js'
 Plugin 'MaxMEllon/vim-jsx-pretty'
 Plugin 'tikhomirov/vim-glsl'
 Plugin 'tpope/vim-surround'
-Plugin 'tabnine/YouCompleteMe'
 Plugin 'evanleck/vim-svelte'
 
 " All of your Plugins must be added before the following line
@@ -108,6 +107,9 @@ set smarttab
 set shiftwidth=2
 set tabstop=2
 
+" Enable fzf in vim
+set rtp+=/opt/homebrew/opt/fzf
+
 " Useful mappings for managing tabs
 map <leader>tn :tabnew<cr>
 map <leader>to :tabonly<cr>
@@ -151,9 +153,27 @@ map <leader>ss :setlocal spell!<cr>
 " Remove the Windows ^M - when the encodings gets messed up
 noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 
-" CtrlP settings
-let g:ctrlp_working_path_mode = 'ra'
-let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+" bind fzf to fuzzy search files on ctrl+p
+nmap <C-P> :FZF<CR>
+" bind fzf to fuzzy search text on ctrl+f
+nmap <C-F> :Rg<CR>
+" Customize fzf popup window (anchored to the bottom of the current window)
+let g:fzf_layout = { 'window': { 'width': 1.0, 'height': 0.33, 'relative': v:true, 'yoffset': 1.1 } }
+" Customize fzf colors to match your color scheme
+let g:fzf_colors =
+\ { 'fg':      ['fg', 'Normal'],
+  \ 'bg':      ['bg', 'Normal'],
+  \ 'hl':      ['fg', 'Comment'],
+  \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+  \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
+  \ 'hl+':     ['fg', 'Statement'],
+  \ 'info':    ['fg', 'PreProc'],
+  \ 'border':  ['fg', 'Ignore'],
+  \ 'prompt':  ['fg', 'Conditional'],
+  \ 'pointer': ['fg', 'Exception'],
+  \ 'marker':  ['fg', 'Keyword'],
+  \ 'spinner': ['fg', 'Label'],
+  \ 'header':  ['fg', 'Comment'] }
 
 " tComment settings
 map <leader>/ gc

@@ -10,9 +10,21 @@ Install Homebrew
 
 Install Oh-My-Zsh
 
+Homebrew install git (bundled git in macos is old usually)
+
+Homebrew install vim (bundled vim in macos is old usually)
+
+Homebrew install python (bundled python in macos is old usually)
+
 Homebrew install fasd
 
 Homebrew install delta (git-delta)
+
+Homebrew install bat
+
+Homebrew install fzf
+
+Homebrew install ripgrep
 
 Set Kibble as terminal theme
 
@@ -24,8 +36,6 @@ Install Vundle
 
 Install Vundle plugins
 
-Install Ag (`the_silver_searcher`)
-
 Install Taurine
 
 Install Magnet
@@ -35,5 +45,3 @@ Install Docker
 Install ZEIT Now Desktop
 
 Install Dropbox
-
-Install git (bundled git in macos is old usually)

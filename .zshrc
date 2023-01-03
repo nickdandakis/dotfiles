@@ -14,6 +14,9 @@ export GPG_TTY=$(tty)
 
 source $ZSH/oh-my-zsh.sh
 
+# setup fzf to use ripgrep to search files
+export FZF_DEFAULT_COMMAND='rg --files --hidden'
+
 # initialize fasd
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 eval "$(fasd --init auto)"
