@@ -36,12 +36,16 @@ Install Vundle
 
 Install Vundle plugins
 
+Run `:Copilot setup`
+
 Install Taurine
 
 Install Magnet
 
 Install Docker
 
-Install ZEIT Now Desktop
+Install Vercel Desktop
 
 Install Dropbox
+
+Install Keybase

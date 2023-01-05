@@ -10,43 +10,50 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-
+" file tree
 Plugin 'scrooloose/nerdtree'
+" status line
 Plugin 'bling/vim-airline'
+" git sidebar
 Plugin 'airblade/vim-gitgutter'
+" github copilot code completions
+Plugin 'github/copilot.vim'
+" theme
 Plugin 'tomasr/molokai'
-Plugin 'junegunn/fzf' " brew install bat, ripgrep, fzf
-Plugin 'junegunn/fzf.vim' " brew install bat, ripgrep, fzf
+" fuzzy finder: brew install bat, ripgrep, fzf
+Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf.vim'
+" smarter commenting
 Plugin 'tomtom/tcomment_vim'
-Plugin 'mhinz/vim-startify'
-Plugin 'posva/vim-vue'
-Plugin 'nelsyeung/twig.vim'
+" smarter time tracking
 Bundle 'wakatime/vim-wakatime'
-Plugin 'leafgarland/typescript-vim'
-Plugin 'yuezk/vim-js'
-Plugin 'MaxMEllon/vim-jsx-pretty'
-Plugin 'tikhomirov/vim-glsl'
+" vue file support
+Plugin 'posva/vim-vue'
+" twig file support
+Plugin 'nelsyeung/twig.vim'
+" smarter surroundings editing
 Plugin 'tpope/vim-surround'
+" TS file support
+Plugin 'leafgarland/typescript-vim'
+" JS file support
+Plugin 'yuezk/vim-js'
+" JSX file support
+Plugin 'MaxMEllon/vim-jsx-pretty'
+" GLSL file support
+Plugin 'tikhomirov/vim-glsl'
+ " svelte file support
 Plugin 'evanleck/vim-svelte'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
 " Syntax highlighting
 syntax on
 
+" enable installed theme
 colorscheme molokai
 
 " Relative line numbers
@@ -159,7 +166,7 @@ nmap <C-P> :FZF<CR>
 nmap <C-F> :Rg<CR>
 " Customize fzf popup window (anchored to the bottom of the current window)
 let g:fzf_layout = { 'window': { 'width': 1.0, 'height': 0.33, 'relative': v:true, 'yoffset': 1.1 } }
-" Customize fzf colors to match your color scheme
+" Customize fzf colors to match the existing theme
 let g:fzf_colors =
 \ { 'fg':      ['fg', 'Normal'],
   \ 'bg':      ['bg', 'Normal'],
