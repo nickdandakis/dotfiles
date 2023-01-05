@@ -34,9 +34,9 @@ Symlink .vimrc
 
 Install Vundle
 
-Install Vundle plugins
+Run `:PluginInstall` in vim
 
-Run `:Copilot setup`
+Run `:Copilot setup` in vim
 
 Install Taurine
 
