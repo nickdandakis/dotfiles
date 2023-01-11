@@ -18,6 +18,8 @@ Plugin 'bling/vim-airline'
 Plugin 'airblade/vim-gitgutter'
 " github copilot code completions
 Plugin 'github/copilot.vim'
+" linting
+Plugin 'dense-analysis/ale'
 " theme
 Plugin 'tomasr/molokai'
 " fuzzy finder: brew install bat, ripgrep, fzf
@@ -197,3 +199,8 @@ let g:vim_jsx_pretty_colorful_config = 1
 
 " Ignore files in NERDTree
 let NERDTreeIgnore = ['\.pyc$', '^__pycache__$']
+
+" avoid layout jank when ALE complains
+let g:ale_sign_column_always = 1
+" ALE auto-complete
+let g:ale_completion_enabled = 1
