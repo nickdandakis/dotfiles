@@ -65,3 +65,8 @@ load-nvmrc
 # alias for changes since last tag
 # aka (g)it (l)og (l)ast changes since (t)ag
 alias gllt='git log $(git describe --tags --abbrev=0)..HEAD --oneline'
+
+# pnpm
+export PNPM_HOME="/Users/nickdandakis/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
