@@ -191,7 +191,7 @@ map <leader>/ gc
 au BufNewFile,BufRead *.ejs set filetype=html
 
 " .svx syntax highlighting
-au BufNewFile,BufRead *.svx set filetype=markdown
+au BufNewFile,BufRead *.svx set filetype=markdown shiftwidth=2
 
 " Allow JSX syntax highlighting in .js files
 let g:jsx_ext_required = 0 
