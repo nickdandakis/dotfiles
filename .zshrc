@@ -70,3 +70,15 @@ alias gllt='git log $(git describe --tags --abbrev=0)..HEAD --oneline'
 export PNPM_HOME="/Users/nickdandakis/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
+
+# lvim
+export LVIM_HOME="/Users/nickdandakis/.local/bin"
+export PATH="$LVIM_HOME:$PATH"
+# lvim end
+
+# bun completions
+[ -s "/Users/nickdandakis/.bun/_bun" ] && source "/Users/nickdandakis/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

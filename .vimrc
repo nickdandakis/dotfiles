@@ -1,55 +1,50 @@
-" Vundle setup
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
+" vim-plug setup
+call plug#begin('~/.vim/plugged')
 
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
+" plugins go here
 " file tree
-Plugin 'scrooloose/nerdtree'
+" Plug 'scrooloose/nerdtree'
 " status line
-Plugin 'bling/vim-airline'
+Plug 'bling/vim-airline'
 " git sidebar
-Plugin 'airblade/vim-gitgutter'
+Plug 'airblade/vim-gitgutter'
 " github copilot code completions
-Plugin 'github/copilot.vim'
+Plug 'github/copilot.vim'
 " linting
-Plugin 'dense-analysis/ale'
+Plug 'dense-analysis/ale'
 " theme
-Plugin 'tomasr/molokai'
+Plug 'tomasr/molokai'
 " fuzzy finder: brew install bat, ripgrep, fzf
-Plugin 'junegunn/fzf'
-Plugin 'junegunn/fzf.vim'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
 " smarter commenting
-Plugin 'tomtom/tcomment_vim'
+Plug 'tomtom/tcomment_vim'
 " smarter time tracking
-Bundle 'wakatime/vim-wakatime'
+Plug 'wakatime/vim-wakatime'
 " vue file support
-Plugin 'posva/vim-vue'
+Plug 'posva/vim-vue'
 " twig file support
-Plugin 'nelsyeung/twig.vim'
+Plug 'nelsyeung/twig.vim'
 " smarter surroundings editing
-Plugin 'tpope/vim-surround'
+Plug 'tpope/vim-surround'
 " TS file support
-Plugin 'leafgarland/typescript-vim'
+Plug 'leafgarland/typescript-vim'
 " JS file support
-Plugin 'yuezk/vim-js'
+Plug 'yuezk/vim-js'
 " JSX file support
-Plugin 'MaxMEllon/vim-jsx-pretty'
+Plug 'MaxMEllon/vim-jsx-pretty'
 " GLSL file support
-Plugin 'tikhomirov/vim-glsl'
+Plug 'tikhomirov/vim-glsl'
  " svelte file support
-Plugin 'evanleck/vim-svelte'
+Plug 'evanleck/vim-svelte'
+Plug 'neovim/nvim-lspconfig'
+Plug 'stevearc/oil.nvim'
 
 " All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-" see :h vundle for more details or wiki for FAQ
+call plug#end()
 " Put your non-Plugin stuff after this line
 
 " Syntax highlighting
@@ -152,7 +147,7 @@ map <leader>+ <C-W>>
 map <leader>- <C-W><
 
 " NERDTree shortcuts
-map <leader>\ :NERDTreeToggle<cr>
+" map <leader>\ :NERDTreeToggle<cr>
 " Close vim if NERDTree is the only thing left 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
@@ -183,6 +178,8 @@ let g:fzf_colors =
   \ 'marker':  ['fg', 'Keyword'],
   \ 'spinner': ['fg', 'Label'],
   \ 'header':  ['fg', 'Comment'] }
+" make Rg search more useful
+command! -bang -nargs=* Rg call fzf#vim#grep("rg --column --line-number --no-heading --color=always --smart-case ".shellescape(<q-args>), 1, {'options': '--delimiter : --nth 4..'}, <bang>0)
 
 " tComment settings
 map <leader>/ gc
