@@ -42,6 +42,8 @@ Plug 'tikhomirov/vim-glsl'
 Plug 'evanleck/vim-svelte'
 Plug 'neovim/nvim-lspconfig'
 Plug 'stevearc/oil.nvim'
+Plug 'nvim-treesitter/nvim-treesitter'
+Plug 'OXY2DEV/markview.nvim'
 
 " All of your Plugins must be added before the following line
 call plug#end()
