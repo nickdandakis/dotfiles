@@ -8,7 +8,7 @@
 [merge]
   conflictstyle = diff3
 [commit]
-  gpgsign = true
+	gpgSign = false
 [tag]
   gpgsign = true
 [diff]
